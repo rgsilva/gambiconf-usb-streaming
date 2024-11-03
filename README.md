@@ -51,6 +51,8 @@ Não se esqueça de montar o disco também usando o USB Gadget Mass Storage:
 sudo modprobe g_mass_storage file=$(pwd)/mnt/imagem.raw
 ```
 
+Para testar local, sem utilizar o USB Gadget, também é possível montar a imagem do disco localmente. Isto pode ser feito utilizando funcionalidades normais do Linux, mas forneci também os arquivos `mount.sh` e `umount.sh` junto aos arquivos do demo 3 que auxiliam neste processo.
+
 ## Parte elétrica
 
 Nem todo rádio dá conta da Raspberry Pi 4 fazendo boot (2 a 3A). Para isto, na talk eu utilizei um cabo USB-A -> USB-C modificado, onde o pino de 5V foi cortado. Conectado ao ground ("negativo") e ao 5V ("positivo") do lado do USB-C (o lado que vai para a Raspberry Pi), eu conectei uma trigger board de Power Delivery, que pode ser facilmente encontrada no AliExpress (pesquise por "trigger board pd", por exemplo). Essa trigger deve ser configurada para 5V, que é a voltagem esperada pela Pi. O fio dos 5V que vai para a porta USB A **não** deve ser conectado (ou vai possivelmente queimar teu rádio).
