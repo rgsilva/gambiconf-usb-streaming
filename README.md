@@ -37,7 +37,7 @@ mkdir -p ./mnt
 bin/streamfs 5000 files/demo3/imagem.raw ./mnt
 ```
 
-⚠️ O demo hoje só funciona corretamente com a porta 5000 e tem alguns offsets parcialmente hard-coded (senão ia levar uns 10min na GambiConf para rodar). Talvez você precise ajustar isto caso mude os arquivos. Entretanto, os arquivos de exemplo são fornecidos neste repositório.
+⚠️ O demo hoje só funciona corretamente com a porta 5000 e tem alguns offsets parcialmente hard-coded (senão ia levar uns 10min na GambiConf para rodar). Talvez você precise ajustar isto caso mude os arquivos. Entretanto, os arquivos de exemplo são fornecidos neste repositório. Eles estão comprimidos (.tar.gz) e você deve extraí-los primeiramente.
 
 Para enviar dados para o FS, você pode um reference stream ou qualquer outro streaming MP3 (ou até mesmo arquivos). Um exemplo é o abaixo:
 
